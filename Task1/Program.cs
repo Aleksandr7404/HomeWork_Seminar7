@@ -4,9 +4,7 @@
 void Interval(int m, int n)
 {
     if (n < m)
-    {
         return;
-    }
     Interval(m, n - 1);
     Console.Write($"{n} ");
 }
