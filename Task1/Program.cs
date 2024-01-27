@@ -10,7 +10,7 @@ void Interval(int m, int n)
     Interval(m, n - 1);
     Console.Write($"{n} ");
 }
-
+Console.Clear();
 Console.Write("Введите значение M: ");
 int m = Convert.ToInt32(Console.ReadLine());
 Console.Write("Введите значение N: ");
