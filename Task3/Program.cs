@@ -13,7 +13,7 @@ void ShowArray(int[] arr, int i = 0)
     if (i < arr.Length)
     {
         Console.Write($"{arr[i]} ");
-        ShowArrayBackwards(arr, i + 1);
+        ShowArray(arr, i + 1);
     }
 }
 void ShowArrayBackwards(int[] arr, int i = 0)
