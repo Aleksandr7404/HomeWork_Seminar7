@@ -3,7 +3,7 @@
 
 void Interval(int m, int n)
 {
-    if (n == m - 1)
+    if (n < m)
     {
         return;
     }
