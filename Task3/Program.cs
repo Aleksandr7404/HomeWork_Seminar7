@@ -8,11 +8,13 @@ int[] CreateArray(int size)
         arrayRnd[i] = new Random().Next(0, 99);
     return arrayRnd;
 }
-void ShowArray(int[] arr)
+void ShowArray(int[] arr, int i = 0)
 {
-    for (int i = 0; i < arr.Length; i++)
+    if (i < arr.Length)
+    {
         Console.Write($"{arr[i]} ");
-
+        ShowArrayBackwards(arr, i + 1);
+    }
 }
 void ShowArrayBackwards(int[] arr, int i = 0)
 {
